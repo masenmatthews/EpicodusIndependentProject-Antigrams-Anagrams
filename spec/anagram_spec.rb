@@ -9,9 +9,9 @@ describe('WordInput') do
       expect(input.vowel_check("jfj", "jfj")).to(eq("please enter a valid word"))
     end
 
-it("Returns inputted values as lowercase") do
-  input = WordInput.new()
-  expect(input.vowel_check("DOG", "CAT")).to(eq("dog, cat"))
+  it("Returns inputted values as lowercase") do
+    input = WordInput.new()
+    expect(input.vowel_check("DOG", "CAT")).to(eq("dog, cat"))
     end
   end
 end
