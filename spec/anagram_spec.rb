@@ -4,9 +4,9 @@ require('anagram')
 
 describe('WordInput') do
   describe('#anagram') do
-    it("returns an inputted string") do
-      input = WordInput.new("dog")
-      expect(word.anagram()).to(eq("dog"))
+    it("Vowel test") do
+      input = WordInput.new()
+      expect(input.anagram("dog", "cat")).to(eq("true"))
     end
   end
 end
