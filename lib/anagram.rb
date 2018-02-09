@@ -12,8 +12,8 @@ class WordInput
   vowel_array.map(&:downcase)
     if (vowel_array.include?('a') == false || vowel_array.include?('e') == false || vowel_array.include?('i') == false || vowel_array.include?('o') == false || vowel_array.include?('u') == false || vowel_array.include?('y') == false)
   return "please enter a valid word"
-  else
-    "test"
+    elsif
+      
   end
 end
 end
