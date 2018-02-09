@@ -16,7 +16,6 @@ end
     array = []
     cap_array = array.push(input1, input2)
     cap_array.map(&:downcase)
-
   end
 
   def anagram_check(input1, input2)
@@ -27,7 +26,7 @@ end
     if test_val1 == test_val2
      "These words are anagrams"
   else
-    return "These words are not anagrams"
+     "These words are not anagrams"
   end
 end
 end

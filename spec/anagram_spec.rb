@@ -14,9 +14,14 @@ describe('WordInput') do
     expect(input.caps_check("JFJ", "JFJ")).to(eq(["jfj", "jfj"]))
   end
 
-  it("Tests if two words are anagrams and returns corresponding result") do
+  it("Tests if two words are anagrams and returns corresponding confirmation") do
     input = WordInput.new()
     expect(input.anagram_check("bury", "ruby")).to(eq("These words are anagrams"))
+    end
+
+  it("Tests if two words are antigrams and returns corresponding confirmation") do
+    input = WordInput.new()
+    expect(input.anagram_check("eat", "grind")).to(eq("These words are not anagrams"))
     end
   end
 end
