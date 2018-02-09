@@ -11,12 +11,12 @@ describe('WordInput') do
 
   it("Returns inputted values as lowercase") do
     input = WordInput.new()
-    expect(input.vowel_check("DOG", "CAT")).to(eq("dog, cat"))
+    expect(input.vowel_check("CAT", "DOG")).to(eq("cat, dog"))
   end
 
   it("Tests if two words are anagrams and returns corresponding result") do
     input = WordInput.new()
-    expect(input.vowel_check("bury", "ruby")).to(eq("These words are anagrams"))
+    expect(input.anagram_check("bury", "ruby")).to(eq("These words are anagrams"))
     end
   end
 end
