@@ -7,11 +7,17 @@ class WordInput
   def vowel_check(input1, input2)
     vowel_array = []
     vowel_array.push(input1, input2)
-    vowel_array.map(&:downcase)
       if (vowel_array.include?('a') == false || vowel_array.include?('e') == false || vowel_array.include?('i') == false || vowel_array.include?('o') == false || vowel_array.include?('u') == false || vowel_array.include?('y') == false)
       return "please enter valid words"
   end
 end
+
+  def caps_check(input1, input2)
+    array = []
+    cap_array = array.push(input1, input2)
+    cap_array.map(&:downcase)
+
+  end
 
   def anagram_check(input1, input2)
     split_val1 = input1.split("")
@@ -25,5 +31,3 @@ end
   end
 end
 end
-
-input = WordInput.new()
