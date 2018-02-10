@@ -6,7 +6,7 @@ describe('WordInput') do
   describe('#anagram') do
   it("Tests for vowels and returns 'please enter a valid word' if there are none") do
     input = WordInput.new()
-    expect(input.vowel_check("jfj", "jfj")).to(eq("please enter valid words"))
+    expect(input.vowel_check("jfj", "jfj")).to(eq("Please enter valid words"))
   end
 
   it("Returns inputted values as lowercase") do

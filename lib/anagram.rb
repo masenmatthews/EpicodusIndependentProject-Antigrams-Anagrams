@@ -8,14 +8,14 @@ class WordInput
     vowel_array = []
     vowel_array.push(input1, input2)
       if (vowel_array.include?('a') == false || vowel_array.include?('e') == false || vowel_array.include?('i') == false || vowel_array.include?('o') == false || vowel_array.include?('u') == false || vowel_array.include?('y') == false)
-      return "please enter valid words"
+      return "Please enter valid words"
   end
 end
 
   def special_character_check(input1, input2)
     special_array = []
     check_array = special_array.push(input1, input2)
-      if (check_array.include?('!') == true || check_aarray.include?('@') == true || check_array.include?('#') == true || check_array.include?('$') == true || check_array.include?('^') == true || check_array.include?('&') == true)
+      if (check_array.include?("!") == true || check_array.include?("@") == true || check_array.include?("#") == true || check_array.include?("$") == true || check_array.include?("*") == true || check_array.include?("&") == true)
       return "Please exclude special characters from input"
   end
 end
