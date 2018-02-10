@@ -21,12 +21,12 @@ describe('WordInput') do
 
   it("Tests if two words are antigrams and returns corresponding confirmation") do
     input = WordInput.new()
-    expect(input.anagram_check("eat", "grind")).to(eq("These words are not anagrams"))
+    expect(input.anagram_check("eat", "grind")).to(eq("These words are antigrams"))
     end
 
-  it("Ignores special characters and asks user to enter valid letters if they are used") do
+  it("Checks to see if inputted value is a palindrome") do
     input = WordInput.new()
-    expect(input.special_character_check("ch@t", "great!")).to(eq("Please exclude special characters from input"))
+    expect(input.palindrome_check("civic", "noon")).to(eq("Inputted values are palindromes"))
     end
   end
 end

@@ -12,19 +12,17 @@ class WordInput
   end
 end
 
-  def special_character_check(input1, input2)
-    special_array = []
-    check_array = special_array.push(input1, input2)
-      if (check_array.include?("!") == true || check_array.include?("@") == true || check_array.include?("#") == true || check_array.include?("$") == true || check_array.include?("*") == true || check_array.include?("&") == true)
-      return "Please exclude special characters from input"
-  end
-end
-
   def caps_check(input1, input2)
     array = []
     cap_array = array.push(input1, input2)
     cap_array.map(&:downcase)
   end
+
+  def palindrome_check(input1, input2)
+    if input1 == input1.reverse() && input2 == input2.reverse()
+    return "Inputted values are palindromes"
+  end
+end
 
   def anagram_check(input1, input2)
     split_val1 = input1.split("")
@@ -33,8 +31,8 @@ end
     test_val2 = split_val2.sort
     if test_val1 == test_val2
      "These words are anagrams"
-  else
-     "These words are not anagrams"
+  elsif test_val1 != test_val2
+     "These words are antigrams"
   end
 end
 end
