@@ -1,12 +1,12 @@
 # _Anagram Tester_
 
-#### _A program that tests whether-or-not inputted values are anagrams, antigrams, or neither. {02/09/2018}_
+#### _A program that tests whether-or-not inputted values are anagrams. {02/09/2018}_
 
 #### By _Masen Matthews_
 
 ## Description
 
-This application allows a user to test whether-or-not two inputted values are anagrams or antigrams. It restricts the use of certain input values by excluding capital letters and special characters.
+This application allows a user to test whether-or-not two inputted values are anagrams, antigrams, or palindromes. It also restricts the use of capital letters. The program uses rsepc to determine proper outcomes.
 
 ## Setup/Installation Requirements
 
@@ -24,7 +24,7 @@ For support and other inquires, please contact Masen Matthews at masenmatthews@g
 
 ## Technologies Used
 
-This application utilizes basic Ruby functionality
+This application utilizes basic Ruby functionality and uses Rspec to test inputs. 
 
 ### License
 
