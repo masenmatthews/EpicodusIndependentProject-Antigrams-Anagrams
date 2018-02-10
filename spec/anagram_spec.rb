@@ -23,5 +23,10 @@ describe('WordInput') do
     input = WordInput.new()
     expect(input.anagram_check("eat", "grind")).to(eq("These words are not anagrams"))
     end
+
+  it("Ignores special characters and asks user to enter valid letters if they are used") do
+    input = WordInput.new()
+    expect(input.special_character_check("ch@t", "great!")).to(eq("Please exclude special characters from input"))
+    end
   end
 end

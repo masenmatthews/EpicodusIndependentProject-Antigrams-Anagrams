@@ -12,6 +12,14 @@ class WordInput
   end
 end
 
+  def special_character_check(input1, input2)
+    special_array = []
+    check_array = special_array.push(input1, input2)
+      if (check_array.include?('!') == true || check_aarray.include?('@') == true || check_array.include?('#') == true || check_array.include?('$') == true || check_array.include?('^') == true || check_array.include?('&') == true)
+      return "Please exclude special characters from input"
+  end
+end
+
   def caps_check(input1, input2)
     array = []
     cap_array = array.push(input1, input2)
